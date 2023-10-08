@@ -1,0 +1,19 @@
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    background: #5899E2;
+    color: white;
+    height:60px;
+    font-family: 'Merriweather', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.form-label{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.line{
+    border-top: 1px solid grey;
+}
