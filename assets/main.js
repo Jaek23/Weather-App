@@ -28,17 +28,42 @@
     .then(response => response.json())
     //.then(data=>console.log(data))
     .then(data=>{
-        for(i=0; i<5; i++){
+      var fiveForecastDays = [];
+      var fiveDaysForecast = data.list.filter(forecast =>{
+        var forecastDate = new Date(forecast.dt_txt).getDate();
+        if(!fiveForecastDays.includes(forecastDate)){
+           return fiveForecastDays.push(forecastDate);
+        } 
+        for(i=0; i<6; i++){
           var cardDiv = document.createElement("div");
           cardDiv.setAttribute("class", "card");
           forecastCards.appendChild(cardDiv);
           var tempatureP = document.createElement("p");
           tempatureP.setAttribute("class", "nextTemp");
           cardDiv.appendChild(tempatureP);
-
-             var nextTempature = data ['list'] [i] ['main'] ['temp'];
-             tempatureP.innerHTML = "Temp: " + nextTempature;
-       
+          
+          var nextTempature = data [i] ['main'] ['temp']
+          tempatureP.innerHTML = "Temp: " + nextTempature;
         }
-    })
+       })
+      console.log(fiveDaysForecast);
+
+
+
+
+
+
+      //   for(i=0; i<40; i++){
+      //     var cardDiv = document.createElement("div");
+      //     cardDiv.setAttribute("class", "card");
+      //     forecastCards.appendChild(cardDiv);
+      //     var tempatureP = document.createElement("p");
+      //     tempatureP.setAttribute("class", "nextTemp");
+      //     cardDiv.appendChild(tempatureP);
+
+      //        var nextTempature = data ['list'] [i] ['main'] ['temp'];
+      //        tempatureP.innerHTML = "Temp: " + nextTempature;
+       
+      //   }
+       })
 })
