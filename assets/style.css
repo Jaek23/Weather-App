@@ -20,3 +20,6 @@ h1{
 .current-day{
     border:1px solid grey;
 }
+.card{
+    width:18rem;
+}
