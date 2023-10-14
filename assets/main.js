@@ -26,7 +26,7 @@
 
     fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${cityInput.value}&units=imperial&exclude=minutely,hourly&appid=4704c9c7e0563a83601c7f6cd4e3b0a7`)
     .then(response => response.json())
-    .then(data=>console.log(data))
+    //.then(data=>console.log(data))
     .then(data=>{
         for(i=0; i<5; i++){
           var cardDiv = document.createElement("div");
