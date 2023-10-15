@@ -19,7 +19,35 @@ h1{
 }
 .current-day{
     border:1px solid grey;
+    padding:10px;
+}
+.current-weather{
+    margin-top: 20px;
+    line-height: 25px;
+    font-size: x-large;
+}
+.currentCity{
+    font-size: xx-large;
+    font-weight: bold;
+}
+#current-date{
+    font-size: xx-large;
+    font-weight: bold;
 }
 .card{
     width:18rem;
+    height:15rem;
+    margin:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    background: #6086AC;
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
+}
+
+#current-date{
+    margin-left:5px;
 }

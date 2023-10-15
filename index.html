@@ -28,29 +28,39 @@
     </div>
     <div class="line my-3 mx-3"></div>
     </div>
-
     <div class="current-day col-8">
+      <div class="d-flex">
       <h2 class="currentCity"></h2>
+      <h2 id="current-date"></h2>
+      </div>
+      <div class="current-weather">
       <p class="currentTempature"></p>
       <p class="currentWind"></p>
       <p class="currentHumidity"></p>
+      </div>
     </div>
   </div>
  
 <div class="second d-flex">
   <ul class="previous-search col-3">
-    <li></li>
-    <li></li>
+    <!--<li></li>
+        <li></li>-->
   </ul>
 
-  <div class=" col-8 d-flex my-3 forecastcards">
-    <!--<div class="card">
+  <div class=" col-8  d-flex my-3 forecastcards">
+      <!--<div class="card">
+        <i class="next-icon"></i>"
         <div class="nextTemp"></div>
         <div class="nextwind"></div>
         <div class="nextHumidity"></div>
     </div>-->
   </div>
 </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
+    ></script>
   <script src="assets/main.js"></script>
 </body>
 </html>
