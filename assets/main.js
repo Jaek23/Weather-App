@@ -9,6 +9,7 @@
   var nextHumid = document.querySelector(".nextHumidity")
   var forecastCards = document.querySelector(".forecastcards");
   var dateNow = document.querySelector("#current-date");
+  var currentDay = document.querySelector(".current-day")
   var date = new Date();
   var currentDate = dayjs();
 
@@ -21,6 +22,7 @@
         var tempValue = data['main']['temp'];
         var windSpeed = data['wind']['speed'];
         var humidityValue = data['main']['humidity']
+
 
         currentCity.innerHTML = nameValue;
         currentTempature.innerHTML = "Temp: " + tempValue + " °F";
