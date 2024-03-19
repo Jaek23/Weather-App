@@ -1,4 +1,4 @@
-# module-challenge-6
+# Weather App
 Weather App
 
 ## Description 
